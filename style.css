@@ -1,6 +1,46 @@
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 12px 24px;
+
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(2px);
+
+  font-family: monospace;
+  z-index: 1000;
+}
+
+.topbar a {
+  color: #d0d0d0;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.topbar a:hover {
+  text-decoration: underline;
+}
+
+.topbar .logo {
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.topbar .disabled {
+  opacity: 0.4;
+  cursor: default;
+  pointer-events: none;
+}
+
 body {
   margin: 0;
-  padding: 80px;
+  padding: 100px 40px 40px 40px;
 
   background-image: url("images/background.png");
   background-size: cover;
